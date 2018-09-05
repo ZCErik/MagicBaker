@@ -1,0 +1,43 @@
+.image img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-warning .btn-danger{
+ margin-left: 15px;
+ margin-bottom: 20px;
+}
+
+.btn-danger {
+  margin-right: 15px;
+}
+
+.delete-form{
+    display: inline;
+}
+.card-header {
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.mainPicture {
+  width: 100%;
+}
+
+.campgroundDescription {
+  padding: 10px;
+}
+
+.img-thumbnail {
+   padding: 0; 
+}
+
+.signin {
+  padding-top: 8px;
+}
