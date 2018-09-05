@@ -51,7 +51,7 @@ function seedDB() {
                //Add comments
                Comment.create(
                {
-                  text: "A lot of Mosquitos on this place",
+                  text: "This is a yummy food!",
                   author: "Agnes T."
                }, function(err, comment){
                   if(err){ 
