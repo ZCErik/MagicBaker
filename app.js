@@ -50,7 +50,10 @@ app.use("/", function(req, res, next){
 
 //Connect to a database (if does not exist, it will create one). 
 //{useNewUrlParser: true} -> Avoid Warning when compiling
-mongoose.connect("mongodb://localhost:27017/yelp_camp2", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost:27017/yelp_camp2", { useNewUrlParser: true });
+
+mongoose.connect("mongodb://eg:Erik0408@ds245762.mlab.com:45762/magicbaker", { useNewUrlParser: true });
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 
