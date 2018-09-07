@@ -30,6 +30,10 @@
   width: 100%;
 }
 
+.foot {
+  background-color: #A78047;
+}
+
 .campgroundDescription {
   padding: 10px;
 }
