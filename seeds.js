@@ -8,27 +8,37 @@ var data = [
    { 
       name: "Cheese Balls", 
       image: "https://i.imgur.com/Cb2DfdD.jpg",
-      description: "Brazilian cheese balls. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank." 
+      description: "Brazilian cheese balls. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 10.00
+      
    },
    { 
       name: "Chocolate Brownie", 
       image: "https://i.imgur.com/vOeSb3B.jpg",
-      description: "Gluten free chocolate brownie. ood pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank." 
+      description: "Gluten free chocolate brownie. ood pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 10.00
+      
    },
    { 
       name: "Honey Bread", 
       image: "https://i.imgur.com/K7ONuAL.jpg",
-      description: "A delicious honey bread. Not actually a Canyon. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank." 
+      description: "A delicious honey bread. Not actually a Canyon. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 8.00
+      
    },
    { 
       name: "Bacon Onion Tart", 
       image: "https://i.imgur.com/RGsbBTQ.jpg",
-      description: "A campground on the cloud! Dark and interesting. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank." 
+      description: "A campground on the cloud! Dark and interesting. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 20.00
+      
    },
    { 
       name: "Almond Butter Cup", 
       image: "https://i.imgur.com/8qqCBrK.jpg",
-      description: "Good pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank." 
+      description: "Good pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 8.00
+      
    }
 ]
 
