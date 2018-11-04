@@ -3,9 +3,9 @@ var mongoose = require("mongoose");
 //Schema set up. (USES: Campground.find() or Campground.create(), or Campground.delete())
 var campgroundSchema = new mongoose.Schema({
     name: String,
-    price: String,
     image: String,
     description: String,
+    price: String,
     author: {
       id: {
         type: mongoose.Schema.Types.ObjectId,
