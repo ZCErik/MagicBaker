@@ -48,7 +48,7 @@ function seedDB() {
       if(err) {
           console.log(err);
       } else {
-          console.log("removed Campground");
+          console.log("removed all the products");
       }
       //Add a few campgrounds - Loop for each campground on DB and create it
       data.forEach(function(seed){
