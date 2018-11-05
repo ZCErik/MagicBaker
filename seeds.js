@@ -9,7 +9,7 @@ var data = [
       name: "Cheese Balls", 
       image: "https://i.imgur.com/Cb2DfdD.jpg",
       description: "Brazilian cheese balls. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
-      price: 10.00
+      price: 5.00
       
    },
    { 
