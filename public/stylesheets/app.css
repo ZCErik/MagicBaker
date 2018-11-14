@@ -14,9 +14,18 @@
   margin-right: 15px;
 }
 
-.delete-form{
-    display: inline;
+.btn-primary {
+  color: #fff;
+  background-color: #98753b;
+  border-color: #98753b;
 }
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #c68f46;
+    border-color: #c68f46;
+}
+
 .card-header {
  margin-top: 20px;
  margin-bottom: 20px;
@@ -41,8 +50,15 @@
 }
 
 .img-thumbnail {
-   padding: 0; 
+   padding: 10px; 
 }
+
+.container-fluid {
+    padding-right:10px;
+    padding-left:10px;
+    margin-right:auto;
+    margin-left:auto
+ }
 
 .signin {
   padding-top: 8px;
