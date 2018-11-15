@@ -63,3 +63,23 @@
 .signin {
   padding-top: 8px;
 }
+
+.footer {
+  width:100%;
+  height:20%; 
+  bottom:0;
+  left:0;
+
+}
+
+.footer-link {
+  background-color: #c68f46;
+  border-color: #c68f46
+}
+
+.login {
+  height:100vh;
+  max-width: 100%;
+  max-height: 100%;
+  
+}
