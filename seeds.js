@@ -27,7 +27,7 @@ var data = [
       
    },
    { 
-      name: "Bacon Onion Tart", 
+      name: "French Onion Tart", 
       image: "https://i.imgur.com/RGsbBTQ.jpg",
       description: "A campground on the cloud! Dark and interesting. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
       price: 20.00
@@ -38,8 +38,19 @@ var data = [
       image: "https://i.imgur.com/8qqCBrK.jpg",
       description: "Good pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
       price: 8.00
-      
-   }
+   },
+   {
+      name: "Hazelnut Truffle", 
+      image: "https://i.imgur.com/b8CSnJZ.jpg",
+      description: "An item from Magic Baker 2.0 - Hazelnut truffles made of Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 10.00
+   },
+   {
+      name: "Honey Vanilla Truffle", 
+      image: "https://i.imgur.com/1V5TcTo.jpg",
+      description: "An item from Magic Baker 2.0 - Honey Vanilla truffles made of Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      price: 10.00
+   },
 ]
 
 function seedDB() {
