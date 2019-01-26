@@ -7,11 +7,12 @@
            
         </header>
     
-        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <div class="row text-center">
             <% campgrounds.forEach(function(campground) { %>
-                <div class="col-md-4 col-sm-5">
-                    <div class="img-thumbnail image">
-                                <img class="ui fluid image medium rounded image" src="<%=campground.image%>" >
+                <div class="col-lg-4 col-md-6">
+                <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">-->
+                    <div class="rounded-0 img-thumbnail image">
+                                <img class="ui fluid image medium image" src="<%=campground.image%>" >
                                 <div class="caption">
                                     <h4> <%= campground.name %> </h4>
                                 </div>

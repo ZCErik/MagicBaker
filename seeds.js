@@ -8,49 +8,50 @@ var data = [
    { 
       name: "Cheese Balls", 
       image: "https://i.imgur.com/Cb2DfdD.jpg",
-      description: "Brazilian cheese balls. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
-      price: 5.00
-      
-   },
-   { 
-      name: "Chocolate Brownie", 
-      image: "https://i.imgur.com/vOeSb3B.jpg",
-      description: "Gluten free chocolate brownie. ood pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      description: "Brazilian cheese balls. Filled with Mozzarella Cheese, Vegetarian. Packed frozen",
       price: 10.00
       
    },
    { 
-      name: "Honey Bread", 
+      name: "Gluten-Free Chocolate Brownie", 
+      image: "https://i.imgur.com/vOeSb3B.jpg",
+      description: "Chocolate Brownies. Made with Almond Flour and Coconut Palm Sugar. Gluten free, Paleo. ",
+      price: 10.00
+      
+   },
+   { 
+      name: "Mini Honey Cakes", 
       image: "https://i.imgur.com/K7ONuAL.jpg",
-      description: "A delicious honey bread. Not actually a Canyon. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      description: "Filled with Dulce de Leche, covered in Dark Chocolate",
       price: 8.00
       
    },
    { 
       name: "French Onion Tart", 
       image: "https://i.imgur.com/RGsbBTQ.jpg",
-      description: "A campground on the cloud! Dark and interesting. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      description: "Topped with bacon and gruyere cheese, Gluten Free, Paleo. Packed Frozen.",
       price: 20.00
       
    },
    { 
       name: "Almond Butter Cup", 
       image: "https://i.imgur.com/8qqCBrK.jpg",
-      description: "Good pictures are taken here. Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
+      description: "Smooth Almond Butter Centre. Covered in Dark Chocolate. Gluten Free, Paleo",
       price: 8.00
    },
    {
-      name: "Hazelnut Truffle", 
-      image: "https://i.imgur.com/b8CSnJZ.jpg",
-      description: "An item from Magic Baker 2.0 - Hazelnut truffles made of Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
-      price: 10.00
+      name: "Brigadeiros", 
+      image: "https://i.imgur.com/8E3xRar.jpg",
+      description: "Chocolate, Dulce de Leche, Coconut or Powdered Milk and Nutella. Gluten-free. Pack of 2",
+      price: 8.00
    },
+   
    {
-      name: "Honey Vanilla Truffle", 
-      image: "https://i.imgur.com/1V5TcTo.jpg",
-      description: "An item from Magic Baker 2.0 - Honey Vanilla truffles made of Bacon ipsum dolor amet chuck pork loin venison meatball bresaola pancetta tongue landjaeger. Tail ball tip leberkas chicken. Sausage drumstick sirloin, spare ribs pastrami turkey pig filet mignon alcatra hamburger t-bone flank jowl. Beef pig beef ribs meatloaf jowl flank swine rump boudin filet mignon. Pancetta kevin turkey pork chop. Chuck short ribs pork loin, pork belly brisket pork ground round picanha tri-tip shoulder ball tip prosciutto cupim flank.",
-      price: 10.00
-   },
+      name: "Chocolate Bars",
+      image: "https://i.imgur.com/DVIHPvx.jpg",
+      description: "Chocolate Bars",
+      price: 25.00
+   }
 ]
 
 function seedDB() {
