@@ -7,21 +7,21 @@ var mongoose   = require("mongoose"),
 var data = [
    { 
       name: "Cheese Balls", 
-      image: "https://i.imgur.com/Cb2DfdD.jpg",
+      image: "https://i.imgur.com/XJhscTj.jpg",
       description: "Brazilian cheese balls. Filled with Mozzarella Cheese, Vegetarian. Packed frozen",
       price: 10.00
       
    },
    { 
-      name: "Gluten-Free Chocolate Brownie", 
-      image: "https://i.imgur.com/vOeSb3B.jpg",
+      name: "Chocolate Brownie (GF)", 
+      image: "https://i.imgur.com/n5D1Ldr.jpg",
       description: "Chocolate Brownies. Made with Almond Flour and Coconut Palm Sugar. Gluten free, Paleo. ",
       price: 10.00
       
    },
    { 
       name: "Mini Honey Cakes", 
-      image: "https://i.imgur.com/K7ONuAL.jpg",
+      image: "https://i.imgur.com/dfPg1IX.jpg",
       description: "Filled with Dulce de Leche, covered in Dark Chocolate",
       price: 8.00
       
@@ -35,7 +35,7 @@ var data = [
    },
    { 
       name: "Almond Butter Cup", 
-      image: "https://i.imgur.com/8qqCBrK.jpg",
+      image: "https://i.imgur.com/E2Odhs4.jpg",
       description: "Smooth Almond Butter Centre. Covered in Dark Chocolate. Gluten Free, Paleo",
       price: 8.00
    },
