@@ -16,14 +16,14 @@
 
 .btn-primary {
   color: #fff;
-  background-color: #98753b;
-  border-color: #98753b;
+  background-color: #ca8c41;
+  border-color: #ca8c41;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #c68f46;
-    border-color: #c68f46;
+    background-color: #8c5c22;
+    border-color: #8c5c22;
 }
 
 .card-header {
