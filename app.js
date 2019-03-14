@@ -62,6 +62,10 @@ app.use(express.static(__dirname + "/public"));
 
 app.set("view engine", "ejs");
 
+app.get("/about", function(req, res){
+   res.render("about"); 
+});
+
 //Tell our app to use those routes.
 app.use("/", indexRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
