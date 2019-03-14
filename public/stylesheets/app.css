@@ -88,7 +88,16 @@
   border-color: #ca8c41;
 }
 
-.test {
-  height:100vh;
-  background-color: red;
+.about {
+  margin:auto;
+  height: 100%;
+  width: 100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.slabo {
+  font-family: 'Slabo 27px', serif;
 }
