@@ -14,7 +14,7 @@
   margin-right: 15px;
 }
 
-.btn-primary {
+.btn-primary, .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #ca8c41;
   border-color: #ca8c41;
