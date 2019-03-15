@@ -101,3 +101,8 @@
 .slabo {
   font-family: 'Slabo 27px', serif;
 }
+
+/*Add foot margin top - 17 to fix black line*/
+.foot {
+  margin-top: -17px;
+}
