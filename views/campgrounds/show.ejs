@@ -4,12 +4,13 @@
     <div class="row">
         <div class="col-md-3">
             <p class="lead"> Magic Baker </p>
-            <!--Copied from Bootstrap Navs to change nav background color-->
+            <!-- Navs to change nav background color-->
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-regular-tab" data-toggle="pill" href="#v-regular-home" role="tab" aria-controls="v-pills-regular" aria-selected="true">Regular Order</a>
-                <a class="nav-link" id="v-pills-magic-tab" data-toggle="pill" href="#v-pills-magic" role="tab" aria-controls="v-pills-magic" aria-selected="false">Magic Product</a>
-                <a class="nav-link" id="v-pills-catering-tab" data-toggle="pill" href="#v-pills-catering" role="tab" aria-controls="v-pills-catering" aria-selected="false">Catering Order</a>
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Regular Order</a>
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Magic Product</a>
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Catering Order</a>
             </div>
+        
         </div>
         <div class="col-md-9">
             <div class="rounded-0 img-thumbnail">
@@ -18,22 +19,22 @@
                     
                     <!--PRICE - Display differents prices for each type of item-->
                     <h4 class="float-right d-inline">$
-                        <div class="tab-content d-inline" id="v-pills-tabContent">
-                            <div class="d-inline tab-pane fade show active" id="v-pills-regular" role="tabpanel" aria-labelledby="v-pills-regular-tab"><%= campground.price %></div>
-                            <div class="d-inline tab-pane fade" id="v-pills-magic" role="tabpanel" aria-labelledby="v-pills-magic-tab"><%= campground.magicPrice %></div>
-                            <div class="d-inline tab-pane fade" id="v-pills-catering" role="tabpanel" aria-labelledby="v-pills-catering-tab"><%= campground.cateringPrice %></div>
-                        </div> / portion
+                    
+                        <div class="tab-content d-inline" id="pills-tabContent">
+                          <div class="tab-pane fade show active d-inline" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <%= campground.price %> </div>
+                          <div class="tab-pane fade d-inline" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <%= campground.magicPrice %> </div>
+                          <div class="tab-pane fade d-inline" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> <%= campground.cateringPrice %> </div>
+                        </div>/ portion
                     </h4>
                     <h4> <a> <%= campground.name %> </a></h4>
                     
                     <p class="campgroundDescription"> 
                         <!-- DESCRIPTION - Text to changes Product Description when menu is activated-->
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-regular" role="tabpanel" aria-labelledby="v-pills-regular-tab"><%= campground.description %></div>
-                            <div class="tab-pane fade" id="v-pills-magic" role="tabpanel" aria-labelledby="v-pills-magic-tab"><%= campground.magicDescription %></div>
-                            <div class="tab-pane fade" id="v-pills-catering" role="tabpanel" aria-labelledby="v-pills-catering-tab"><%= campground.cateringDescription %></div>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <%= campground.description %> </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <%= campground.magicDescription %> </div>
+                          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> <%= campground.cateringDescription %> </div>
                         </div>
-                    
                     </p>
                     <p>
                         <em>Submitted by <%= campground.author.username %> </em> 
