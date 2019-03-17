@@ -8,6 +8,8 @@ var campgroundSchema = new mongoose.Schema({
     magicDescription: String,
     cateringDescription: String,
     price: String,
+    magicPrice: String,
+    cateringPrice: String,
     author: {
       id: {
         type: mongoose.Schema.Types.ObjectId,

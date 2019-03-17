@@ -10,8 +10,10 @@ var data = [
       image: "https://i.imgur.com/XJhscTj.jpg",
       description: "Brazilian cheese balls. Filled with Mozzarella Cheese, Vegetarian. Packed frozen",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
-      cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 10.00
+      cateringDescription: "100 of Cheese balls, serves 20 people! This item can be served on catering events, both regular and magic!",
+      price: 4.00,
+      magicPrice: 10.00,
+      cateringPrice: 70.00
       
    },
    { 
@@ -20,7 +22,9 @@ var data = [
       description: "Chocolate Brownies. Made with Almond Flour and Coconut Palm Sugar. Gluten free, Paleo. ",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 10.00
+      price: 4.00,
+      magicPrice: 10.00,
+      cateringPrice: 99.99
       
    },
    { 
@@ -29,7 +33,9 @@ var data = [
       description: "Filled with Dulce de Leche, covered in Dark Chocolate",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 8.00
+      price: 8.00,
+      magicPrice: 10.00,
+      cateringPrice: 99.99
       
    },
    { 
@@ -38,7 +44,9 @@ var data = [
       description: "Topped with bacon and gruyere cheese, Gluten Free, Paleo. Packed Frozen.",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 20.00
+      price: 10.00,
+      magicPrice: 20.00,
+      cateringPrice: 99.99
       
    },
    { 
@@ -47,7 +55,9 @@ var data = [
       description: "Smooth Almond Butter Centre. Covered in Dark Chocolate. Gluten Free, Paleo",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 8.00
+      price: 8.00,
+      magicPrice: 10.00,
+      cateringPrice: 99.99
    },
    {
       name: "Brigadeiros", 
@@ -55,16 +65,19 @@ var data = [
       description: "Chocolate, Dulce de Leche, Coconut or Powdered Milk and Nutella. Gluten-free. Pack of 2",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 8.00
+      price: 8.00,
+      magicPrice: 10.00,
+      cateringPrice: 99.99
    },
-   
    {
       name: "Chocolate Bars",
       image: "https://i.imgur.com/DVIHPvx.jpg",
       description: "Chocolate Bars",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
-      price: 25.00
+      price: 10.00,
+      magicPrice: 25.00,
+      cateringPrice: 99.99
    }
 ]
 
