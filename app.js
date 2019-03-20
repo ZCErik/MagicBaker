@@ -72,7 +72,13 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/campgrounds", campgroundRoutes);
 
 
+//Trying to fix another error
+app.on('listening',function(){
+    console.log('ok, server is running');
+});
+
 //TELL EXPRESS TO LISTEN FOR REQUEST
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Magic Baker server has started");
 });
+
