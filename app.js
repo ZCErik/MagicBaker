@@ -66,6 +66,10 @@ app.get("/about", function(req, res){
    res.render("about"); 
 });
 
+app.get("/history", function(req, res){
+   res.render("history"); 
+});
+
 //Tell our app to use those routes.
 app.use("/", indexRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
