@@ -5,6 +5,10 @@
   background-position: center;
 }
 
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
 .btn-warning .btn-danger{
  margin-left: 15px;
  margin-bottom: 20px;
