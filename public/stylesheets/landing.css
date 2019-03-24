@@ -2,6 +2,10 @@ body {
   background-color: #000;
 }
 
+html, body {
+ overflow-x: hidden;
+}
+
 #landing-header {
   z-index: 1;
   position: relative;
@@ -14,8 +18,6 @@ body {
 }
 
 .slideshow {
-  
-  /*position: absolute;*/
   top: 0;
   left: 0;
   list-style: none;
@@ -65,8 +67,10 @@ body {
 }
 
 #mainButton {
-  background-color: #AB8145;
-  border-color: #AB8145;
+  /*background-color: #AB8145;*/
+  /*border-color: #AB8145;*/
+  background: radial-gradient(ellipse at top, #AB8145 , transparent),
+            radial-gradient(ellipse at bottom, #AB8145, transparent);
 }
 
 @keyframes imageAnimation { 

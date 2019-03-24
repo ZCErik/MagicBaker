@@ -5,7 +5,7 @@
   background-position: center;
 }
 
-h1 {
+.myFont {
   font-family: 'Playfair Display', serif;
 }
 
@@ -111,7 +111,8 @@ h1 {
   margin-top: -17px;
 }
 
-#whisks:hover {
+/*Move logo when mouse over*/
+.whisks:hover {
     transition: .03s all;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -119,3 +120,7 @@ h1 {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+ html, body {
+   overflow-x: hidden;
+ }
