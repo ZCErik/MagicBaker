@@ -1,7 +1,3 @@
-body {
-  background-color: #000;
-}
-
 html, body {
  overflow-x: hidden;
 }
@@ -27,7 +23,7 @@ html, body {
 }
 
 .wrapper {
-  margin-top: 46vh;
+  padding-top: 48vh;
   width: 100%;
   height: 100%;
 }
@@ -67,10 +63,14 @@ html, body {
 }
 
 #mainButton {
-  /*background-color: #AB8145;*/
-  /*border-color: #AB8145;*/
-  background: radial-gradient(ellipse at top, #AB8145 , transparent),
-            radial-gradient(ellipse at bottom, #AB8145, transparent);
+  background-color: #AB8145;
+  border-color: #AB8145;
+  /*background: radial-gradient(ellipse at top, #AB8145 , transparent),*/
+  /*          radial-gradient(ellipse at bottom, #AB8145, transparent);*/
+}
+
+#mainButton:active {
+  
 }
 
 @keyframes imageAnimation { 
