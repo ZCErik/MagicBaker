@@ -2,6 +2,15 @@ body {
   background-color: #fff;
 }
 
+html, body {
+ overflow-x: hidden;
+}
+
+.mainLogo {
+  height: 150px;
+  width: 150px;
+  margin-left: 15px;
+}
 
 .image img {
   width: 100%;
@@ -124,7 +133,3 @@ body {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
- html, body {
-   overflow-x: hidden;
- }
