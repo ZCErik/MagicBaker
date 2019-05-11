@@ -1,6 +1,6 @@
 var express    = require("express"),
     router     = express.Router({mergeParams: true}),
-    Campground = require("../models/campground"),
+    Product    = require("../models/product"),
     Comment    = require("../models/comment"),
     middleware = require("../middleware");
 
@@ -12,22 +12,22 @@ var express    = require("express"),
 router.get("/new", middleware.isLoggedIn, function(req, res) {
     
     //Find by Id
-    Campground.findById(req.params.id, function(err, campground){
+    Product.findById(req.params.id, function(err, product){
         if(err){
             req.flash("error", "Something went wrong");
         } else {
-            res.render("comments/new", {campground: campground});        
+            res.render("comments/new", {product: product});        
         }
     });
 });
 
 //Comments Create
 router.post("/", middleware.isLoggedIn, function(req, res){
-   //Lookup campground using ID
-   Campground.findById(req.params.id, function(err, campground) {
+   //Lookup product using ID
+   Product.findById(req.params.id, function(err, product) {
       if(err){
           req.flash("error", "Something went wrong");
-          res.redirect("/campgrounds");
+          res.redirect("/products");
       } else {
         //create new comment
         Comment.create(req.body.comment, function(err, comment){
@@ -41,12 +41,12 @@ router.post("/", middleware.isLoggedIn, function(req, res){
                //save comment
                comment.save();
                
-               //connect new comment to campgrounds
-               campground.comments.push(comment);
-               campground.save();
-               //redirect to that campground
+               //connect new comment to products
+               product.comments.push(comment);
+               product.save();
+               //redirect to that product
                req.flash("Success", "Success added a comment");
-               res.redirect("/campgrounds/" + campground._id);
+               res.redirect("/products/" + product._id);
            }
         });
       }
@@ -59,7 +59,7 @@ router.get("/:comment_id/edit", middleware.checkCommentOwnership, function(req, 
         if(err){
             res.redirect("back");
         } else {
-            res.render("comments/edit", {campground_id: req.params.id, comment: foundComment}); 
+            res.render("comments/edit", {product_id: req.params.id, comment: foundComment}); 
         }
     });
 });
@@ -70,7 +70,7 @@ router.put("/:comment_id", middleware.checkCommentOwnership, function(req, res){
        if(err){
            res.redirect("back");
        } else {
-           res.redirect("/campgrounds/" + req.params.id);
+           res.redirect("/products/" + req.params.id);
        }
     });
 });
@@ -84,7 +84,7 @@ router.delete("/:comment_id", middleware.checkCommentOwnership, function(req, re
        } else {
                 
            req.flash("success", "Comment deleted");     
-           res.redirect("/campgrounds/" + req.params.id);
+           res.redirect("/products/" + req.params.id);
        }
    });
 });

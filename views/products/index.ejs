@@ -8,16 +8,16 @@
         </header>
     
         <div class="row text-center mb-5">
-            <% campgrounds.forEach(function(campground) { %>
+            <% products.forEach(function(product) { %>
                 <div class="col-lg-4 col-md-6">
                 <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">-->
                     <div class="rounded-0 img-thumbnail image">
-                                <img class="ui fluid image medium image" src="<%=campground.image%>" >
+                                <img class="ui fluid image medium image" src="<%=product.image%>" >
                                 <div class="caption">
-                                    <h4> <%= campground.name %> </h4>
+                                    <h4> <%= product.name %> </h4>
                                 </div>
                                 <p>
-                                    <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                                    <a href="/products/<%= product._id %>" class="btn btn-primary">More Info</a>
                                 </p>
                     </div>
                 </div>

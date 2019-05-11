@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 
 //Schema set up. (USES: Campground.find() or Campground.create(), or Campground.delete())
-var campgroundSchema = new mongoose.Schema({
+var productSchema = new mongoose.Schema({
     name: String,
     image: String,
     description: String,
@@ -27,4 +27,4 @@ var campgroundSchema = new mongoose.Schema({
 });
 
 //compile the schema into a model
-module.exports = mongoose.model("Campground", campgroundSchema);
+module.exports = mongoose.model("Product", productSchema);
