@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-      <!-- Meta tags to research and share the business-->
-      <meta name="description" content="A Local bakery that combines great recipes inspired in traditional Brazilian cuisine with modern baking techniques and HIGH quality ingredients.">
-      <meta property="og:title" content="Magic Baker Toronto"/>
-      <meta property="og:url" content="magicbakerto.ca"/>
-      <meta property="og:description" content="Bakery combining Brazilian cuisine with HIGH quality ingredients">
-      <meta property="og:image" content="https://i.imgur.com/V38pSyF.png">
-      <meta property="og:type" content="website"/>
-      <meta property="og:locale" content="en_US" />
-      
-      <title> The Magic Baker </title>
-      <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/CRaEcUM.png"/>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="/stylesheets/landing.css">
-      <!--Make the page more compatible-->
-      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>-->
-    </head>
-    <body>
-    
-    <div class="container">
-        <% if(error && error.length > 0){ %>
-            <div class="alert alert-danger" role="alert">
-                <%= error %>
-            </div>
-        <% } %>
-        <% if(success && success.length > 0){ %>
-            <div class="alert alert-success" role="alert">
-                <%= success %>
-            </div>
-        <% } %>
-    </div>
-    
-    <div id="landing-header">
- 		<h1>Magic Baker!</h1>
-		<a href="/products" id="mainButton" class="mainButton btn btn-lg btn-success border-0">Shop Now</a>
-    </div>
-    <ul class="slideshow">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    
-    <div class="wrapper">
-     <% include ./about %>
-    </div>
+  
+  <% include ./head %>
+  
+  <body>
+  
+  <div class="container">
+      <% if(error && error.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+              <%= error %>
+          </div>
+      <% } %>
+      <% if(success && success.length > 0){ %>
+          <div class="alert alert-success" role="alert">
+              <%= success %>
+          </div>
+      <% } %>
+  </div>
+  
+  <div id="landing-header">
+ 	<h1>Magic Baker!</h1>
+	<a href="/products" id="mainButton" class="mainButton btn btn-lg btn-success border-0">Shop Now</a>
+  </div>
+  <ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  
+  <div class="wrapper">
+   <% include ./about %>
+  </div>
                
     
     
