@@ -1,14 +1,18 @@
 body {
-  background-color: #fff;
+  background-color: red;
 }
 
 html, body {
  overflow-x: hidden;
 }
 
+.mainLink {
+  margin-left: 35%;
+}
+
 .mainLogo {
-  height: 150px;
-  width: 150px;
+  max-width: 130px;
+  max-height: 106px;
   margin-left: 15px;
 }
 
