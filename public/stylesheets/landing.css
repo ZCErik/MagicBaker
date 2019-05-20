@@ -14,7 +14,6 @@ body {
 }
 
 .slideshow {
-  
   /*position: absolute;*/
   top: 0;
   left: 0;
@@ -64,9 +63,14 @@ body {
   animation-delay: 20s; 
 }
 
-#mainButton {
+.mainButton {
   background-color: #AB8145;
   border-color: #AB8145;
+  color: #FFFFFF;
+}
+
+.mainButton:active {
+  box-shadow: none;
 }
 
 @keyframes imageAnimation { 

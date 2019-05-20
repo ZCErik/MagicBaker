@@ -6,6 +6,10 @@ html, body {
  overflow-x: hidden;
 }
 
+.mainButton {
+  
+}
+
 .mainLink {
   margin-left: 35%;
 }
@@ -126,6 +130,10 @@ html, body {
 /*Add foot margin top - 17 to fix black line*/
 .foot {
   margin-top: -17px;
+}
+
+.whisks {
+  margin-top: 0px;
 }
 
 /*Move logo when mouse over*/
