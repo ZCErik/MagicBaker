@@ -6,8 +6,13 @@ html, body {
  overflow-x: hidden;
 }
 
-.mainButton {
+.mainButton:hover{
+  color: #F0E68C;
   
+}
+.mainButton:focus,.mainButton:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .mainLink {
@@ -25,6 +30,11 @@ html, body {
   height: 250px;
   background-size: cover;
   background-position: center;
+}
+
+.profile {
+  width: 500px;
+  height: 500px;
 }
 
 .myFont {
