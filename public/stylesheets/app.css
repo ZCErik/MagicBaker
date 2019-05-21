@@ -1,8 +1,44 @@
+body {
+  background-color: red;
+}
+
+html, body {
+ overflow-x: hidden;
+}
+
+.mainButton:hover{
+  color: #F0E68C;
+  
+}
+.mainButton:focus,.mainButton:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.mainLink {
+  margin-left: 35%;
+}
+
+.mainLogo {
+  max-width: 130px;
+  max-height: 106px;
+  margin-left: 15px;
+}
+
 .image img {
   width: 100%;
   height: 250px;
   background-size: cover;
   background-position: center;
+}
+
+.profile {
+  width: 500px;
+  height: 500px;
+}
+
+.myFont {
+  font-family: 'Playfair Display', serif;
 }
 
 .btn-warning .btn-danger{
@@ -72,13 +108,12 @@
 
 }
 
-.footer-link {
-  background-color: #ca8c41;
-  border-color: #ca8c41;
+#footer-link, .footer-link{
+  background-color: #ca8c41 !important;
 }
 
 .login {
-  height:100vh;
+  height: 100vh;
   max-width: 100%;
   max-height: 100%;
 }
@@ -98,11 +133,25 @@
   right:0;
 }
 
-.slabo {
+.myFontText {
   font-family: 'Slabo 27px', serif;
 }
 
 /*Add foot margin top - 17 to fix black line*/
 .foot {
   margin-top: -17px;
+}
+
+.whisks {
+  margin-top: 0px;
+}
+
+/*Move logo when mouse over*/
+.whisks:hover {
+    transition: .03s all;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }

@@ -1,0 +1,80 @@
+<% include ../partials/header %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead"> Magic Baker </p>
+            <!-- Navs to change nav background color-->
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Regular Order</a>
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Magic Product</a>
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Catering Order</a>
+            </div>
+        
+        </div>
+        <div class="col-md-9">
+            <div class="rounded-0 img-thumbnail">
+                    <img class="rounded-0 img-fluid mainPicture" src="<%= product.image %> ">
+                <div class="caption-full">
+                    
+                    <!--PRICE - Display differents prices for each type of item-->
+                    <h4 class="float-right d-inline">$
+                    
+                        <div class="tab-content d-inline" id="pills-tabContent">
+                          <div class="tab-pane fade show active d-inline" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <%= product.price %> </div>
+                          <div class="tab-pane fade d-inline" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <%= product.magicPrice %> </div>
+                          <div class="tab-pane fade d-inline" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> <%= product.cateringPrice %> </div>
+                        </div>/ portion
+                    </h4>
+                    <h4> <a> <%= product.name %> </a></h4>
+                    
+                    <p class="campgroundDescription"> 
+                        <!-- DESCRIPTION - Text to changes Product Description when menu is activated-->
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <%= product.description %> </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <%= product.magicDescription %> </div>
+                          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> <%= product.cateringDescription %> </div>
+                        </div>
+                    </p>
+                    <p>
+                        <em>Submitted by <%= product.author.username %> </em> 
+                    </p>
+                    <% if(currentUser && product.author.id.equals(currentUser._id)) { %>
+                    <a class="btn btn-warning" href="/products/<%= product._id %>/edit">Edit</a>
+                    <form class="float-right" id="delete-form" action="/products/<%= product._id %>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                    <% } %>
+                </div>
+            </div>
+            <div class="card card-header">
+                <div class="float-right"> 
+                    <a class="mainButton btn btn-lg float-right" href="/products/<%= product._id %>/comments/new">Add New Comment</a>
+                </div>
+                <hr>
+                    <% product.comments.forEach(function(comment){ %>
+                        <div class="row">
+                            <div class="col-md-12">
+                               <strong> <%= comment.author.username %> </strong>
+                                <span class="float-right">10 days ago</span>
+                                <p>
+                                    <%= comment.text %>
+                                </p>
+                                <% if(currentUser && comment.author.id.equals(currentUser._id)) { %>
+                                    <a class="btn btn-sm btn-warning" href="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>/edit">
+                                        Edit
+                                    </a>
+                                    <form class="delete-form" action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                                        <input type="submit" class="btn btn-sm btn-danger" value="Delete">
+                                    </form>
+                                <% } %>
+                            </div>
+                        </div>
+                    <% }); %>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+<% include ../partials/footer %>

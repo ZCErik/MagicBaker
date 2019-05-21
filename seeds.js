@@ -1,8 +1,8 @@
 var mongoose   = require("mongoose"),
-    Campground = require("./models/campground"),
+    Product    = require("./models/product"),
     Comment    = require("./models/comment");
 
-//CREATE CAMPGROUNDSS
+//CREATE PRODUCTS
 
 var data = [
    { 
@@ -71,7 +71,7 @@ var data = [
    },
    {
       name: "Chocolate Bars",
-      image: "https://i.imgur.com/DVIHPvx.jpg",
+      image: "https://i.imgur.com/uE500rt.jpg",
       description: "Chocolate Bars",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
@@ -82,20 +82,20 @@ var data = [
 ]
 
 function seedDB() {
-   //Remove all campgrounds
-   Campground.remove({}, function(err){
+   //Remove all products
+   Product.remove({}, function(err){
       if(err) {
           console.log(err);
       } else {
           console.log("removed all the products");
       }
-      //Add a few campgrounds - Loop for each campground on DB and create it
+      //Add a few products - Loop for each product on DB and create it
       data.forEach(function(seed){
-      Campground.create(seed, function(err, campground){
+      Product.create(seed, function(err, product){
             if(err){
                console.log(err);
             } else {
-               console.log("Campground has been added");
+               console.log("Product has been added");
                
                //Add comments
                Comment.create(
@@ -106,8 +106,8 @@ function seedDB() {
                   if(err){ 
                      console.log(err);
                   } else {
-                     campground.comments.push(comment);
-                     campground.save();
+                     product.comments.push(comment);
+                     product.save();
                      console.log("Created new comment");
                   }
                })

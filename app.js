@@ -2,7 +2,7 @@ var express               = require("express"),
     app                   = express(),
     bodyParser            = require("body-parser"),
     mongoose              = require("mongoose"),
-    Campground            = require("./models/campground"),
+    Product               = require("./models/product"),
     Comment               = require("./models/comment"),
     User                  = require("./models/users"),
     seedDB                = require("./seeds"),
@@ -14,7 +14,7 @@ var express               = require("express"),
 
 //Require route files
 var commentRoutes    = require("./routes/comments"),
-    campgroundRoutes = require("./routes/campgrounds"),
+    productRoutes    = require("./routes/products"),
     indexRoutes      = require("./routes/index");
 
 //EXECUTE SEED DATABASE EVERYTIME
@@ -66,13 +66,23 @@ app.get("/about", function(req, res){
    res.render("about"); 
 });
 
+app.get("/history", function(req, res){
+   res.render("history"); 
+});
+
 //Tell our app to use those routes.
 app.use("/", indexRoutes);
-app.use("/campgrounds/:id/comments", commentRoutes);
-app.use("/campgrounds", campgroundRoutes);
+app.use("/products/:id/comments", commentRoutes);
+app.use("/products", productRoutes);
 
+
+//Trying to fix another error
+app.on('listening',function(){
+    console.log('ok, server is running');
+});
 
 //TELL EXPRESS TO LISTEN FOR REQUEST
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Magic Baker server has started");
 });
+
