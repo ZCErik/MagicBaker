@@ -71,7 +71,7 @@ var data = [
    },
    {
       name: "Chocolate Bars",
-      image: "https://i.imgur.com/DVIHPvx.jpg",
+      image: "https://i.imgur.com/uE500rt.jpg",
       description: "Chocolate Bars",
       magicDescription: "This savoury cheese balls, has the same ingredients plus our magic! 100ml of cannabis Sativa",
       cateringDescription: "This item can be served on catering events, both regular and magic!",
